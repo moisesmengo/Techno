@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #f5eeee } 
+	</style>
+	<g id="Pasta 1">
+		<path id="Forma 1" class="shp0" d="M143 172L421 172L421 250L143 250L143 172Z" />
+		<path id="Forma 2" class="shp0" d="M232 261L271 261L271 472L232 472L232 261Z" />
+		<path id="Forma 3" class="shp0" d="M302 268L334 268L334 470L302 470L302 268Z" />
+		<path id="Forma 4" class="shp0" d="M341 429L426 429L426 469L341 469L341 429Z" />
+		<path id="Forma 5" class="shp0" d="M347 343L415 343L415 370L347 370L347 343Z" />
+		<path id="Forma 6" class="shp0" d="M440 181L517 181L517 470L440 470L440 181Z" />
+		<path id="Forma 7" class="shp0" d="M532 175L588 175L588 208L532 208L532 175Z" />
+		<path id="Forma 8" class="shp0" d="M526 433L712 433L712 470L526 470L526 433Z" />
+		<path id="Forma 9" class="shp0" d="M605 183L639 183L639 415L605 415L605 183Z" />
+		<path id="Forma 10" class="shp0" d="M665 283L678 283L678 313L665 313L665 283Z" />
+		<path id="Forma 11" class="shp0" d="M709 177L726 177L726 419L709 419L709 177Z" />
+		<path id="Forma 12" class="shp0" d="M746 168L769 168L769 467L746 467L746 168Z" />
+		<path id="Forma 13" class="shp0" d="M860 175L886 175L886 460L860 460L860 175Z" />
+		<path id="Forma 14" class="shp0" d="M785 196L804 196L804 248L785 248L785 196Z" />
+		<path id="Forma 15" class="shp0" d="M815 279L835 279L835 327L815 327L815 279Z" />
+		<path id="Forma 16" class="shp0" d="M833 366L850 366L850 427L833 427L833 366Z" />
+		<path id="Forma 17" class="shp0" d="M908 163L970 163L970 464L908 464L908 163Z" />
+		<path id="Forma 18" class="shp0" d="M986 159L1012 159L1012 194L986 194L986 159Z" />
+		<path id="Forma 19" class="shp0" d="M1022 159L1057 159L1057 439L1022 439L1022 159Z" />
+	</g>
+</svg>
