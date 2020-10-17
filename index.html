@@ -13,14 +13,8 @@
 
     <header class="header">
       <img src="./assets/img/Novo Projeto.svg" alt="Logo" class="logo">
-      <div class="carrinho_menu">
+      <div class="carrinho_menu" @click="carrinhoAtivo = true">
         {{carrinhoTotal | numeroPareco}} | {{carrinho.length}} <img src="assets/img/carrinho.svg" alt=""> 
-        <ul>
-          <li v-for="(item, index) in carrinho" :key="item.id">
-            <p> {{item.nome}} </p>
-            <button @click="removerItem(index)">X</button>
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -46,7 +40,7 @@
 
         <div class="modal_dados">
           <button class="modal_fechar" @click="produto=false">X</button>
-          <span class="modal_preco"> {{produto.preco}} </span>
+          <span class="modal_preco"> {{produto.preco | numeroPareco}} </span>
           <h2 class="modal_titulo"> {{produto.nome}} </h2>
           <p>{{produto.descricao}}</p>
           <button class="modal_btn" 
@@ -67,6 +61,29 @@
         </div>
       </div>
     </section>
+
+    <div class="carrinho_modal" :class="{ativo : carrinhoAtivo}" @click="clickForaCarrinho">
+      <div class="carrinho_container">
+        <button @click="carrinhoAtivo = false" class="carrinho_fechar">X</button>
+        <h2 class="carrinho_titulo">Carrinho</h2>
+        <div v-if="carrinho.length > 0">
+          <ul class="carrinho_lista">
+            <li v-for="(item, index) in carrinho" ::key="item.id" class="carrinho_item">
+              <p> {{item.nome}} </p>
+              <p class="carrinho_preco"> {{item.preco | numeroPareco}} </p>
+              <button class="carrinho_remover" @click="removerItem(index)">X</button>
+            </li>
+          </ul>
+          <p class="carrinho_total"> {{carrinhoTotal | numeroPareco}}</p>
+          <button class="carrinho_finalizar">Finalizar Compra</button>
+        </div>
+        <p v-else>O carrinho está vazio</p>
+      </div>
+    </div>
+
+    <div class="alerta" :class="{ ativo : alertaAtivo}">
+      <p class="alerta-msg"> {{mensagemAlerta}} </p>
+    </div>
   </div>
   <script src="assets/js/app.js"></script>
 </body>
